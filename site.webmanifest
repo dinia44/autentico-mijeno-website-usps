@@ -1,0 +1,17 @@
+{
+  "name": "Auténtico Mijeño",
+  "short_name": "Auténtico Mijeño",
+  "description": "Gestión integral de propiedades en Mijas Pueblo, Málaga.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#061944",
+  "theme_color": "#061944",
+  "lang": "es",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
