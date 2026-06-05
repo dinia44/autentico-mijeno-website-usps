@@ -94,14 +94,15 @@ const translations = {
       },
     },
     properties: {
-      eyebrow: "Presentación visual",
+      eyebrow: "Propiedades gestionadas",
       title: "Fotos que venden la experiencia, no solo las habitaciones",
       copy:
-        "Una vivienda bien presentada genera más confianza. Estas imágenes muestran el tipo de estilo visual que recomendamos para destacar la propiedad.",
+        "Esta vivienda en Mijas Pueblo es un ejemplo real de cómo presentamos y cuidamos las propiedades que gestionamos.",
       cardOne: {
-        label: "Alquiler vacacional",
-        title: "Terraza con vistas",
-        copy: "Fotografía cálida para enseñar el estilo de vida que buscan los huéspedes.",
+        label: "Vivienda gestionada",
+        title: "Propiedad en Mijas Pueblo",
+        copy:
+          "Una vivienda real que James y Andrea presentan y cuidan para huéspedes y propietarios.",
       },
       cardTwo: {
         label: "Preparación",
@@ -291,14 +292,15 @@ const translations = {
       },
     },
     properties: {
-      eyebrow: "Visual presentation",
+      eyebrow: "Managed properties",
       title: "Photos that sell the experience, not just the rooms",
       copy:
-        "A well-presented property builds trust faster. These images show the kind of visual style we recommend to help the property stand out.",
+        "This home in Mijas Pueblo is a real example of how we present and care for the properties we manage.",
       cardOne: {
-        label: "Holiday lets",
-        title: "Terrace with views",
-        copy: "Warm imagery that shows the lifestyle guests are looking for.",
+        label: "Managed property",
+        title: "Property in Mijas Pueblo",
+        copy:
+          "A real home that James and Andrea present and look after for guests and owners.",
       },
       cardTwo: {
         label: "Preparation",
