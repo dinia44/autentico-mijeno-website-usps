@@ -253,15 +253,13 @@ textarea:focus-visible {
   background:
     linear-gradient(
       90deg,
-      rgba(6, 25, 68, 0.97) 0%,
-      rgba(6, 25, 68, 0.9) 22%,
-      rgba(6, 25, 68, 0.62) 38%,
-      rgba(6, 25, 68, 0.18) 54%,
-      transparent 66%
+      rgba(6, 25, 68, 0.93) 0%,
+      rgba(6, 25, 68, 0.82) 26%,
+      rgba(6, 25, 68, 0.42) 46%,
+      transparent 62%
     ),
-    linear-gradient(180deg, rgba(6, 25, 68, 0.38) 0%, transparent 12%),
-    linear-gradient(0deg, rgba(6, 25, 68, 0.48) 0%, transparent 14%),
-    linear-gradient(270deg, rgba(6, 25, 68, 0.2) 0%, transparent 10%);
+    linear-gradient(180deg, rgba(6, 25, 68, 0.28) 0%, transparent 10%),
+    linear-gradient(0deg, rgba(6, 25, 68, 0.32) 0%, transparent 12%);
   pointer-events: none;
   z-index: -1;
 }
@@ -269,22 +267,23 @@ textarea:focus-visible {
 .hero-content {
   position: relative;
   z-index: 1;
-  width: min(720px, 100%);
-  padding: clamp(22px, 3.5vw, 34px);
-  border-radius: calc(var(--radius) + 2px);
-  background: linear-gradient(
-    135deg,
-    rgba(6, 25, 68, 0.78) 0%,
-    rgba(6, 25, 68, 0.58) 100%
-  );
-  box-shadow: 0 22px 54px rgba(6, 25, 68, 0.24);
-  backdrop-filter: blur(2px);
+  width: min(620px, 100%);
+  padding-left: clamp(18px, 2.8vw, 28px);
+  border-left: 3px solid var(--gold-soft);
 }
 
-.hero-content h1,
-.hero-content .hero-lede,
-.hero-content .eyebrow {
-  text-shadow: 0 2px 14px rgba(6, 25, 68, 0.55);
+.hero-content h1 {
+  max-width: 12ch;
+  margin-bottom: 16px;
+  font-size: clamp(2.55rem, 4.6vw, 4.15rem);
+  line-height: 1.02;
+}
+
+.hero .eyebrow {
+  margin-bottom: 14px;
+  color: var(--gold-soft);
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
 }
 
 .eyebrow {
@@ -295,11 +294,6 @@ textarea:focus-visible {
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
-
-.hero .eyebrow {
-  color: var(--gold-soft);
-}
-
 h1,
 h2,
 h3,
@@ -338,18 +332,65 @@ p {
 }
 
 .hero-lede {
-  max-width: 590px;
-  margin-bottom: 26px;
-  color: #ffffff;
-  font-size: clamp(1.08rem, 2vw, 1.35rem);
-  font-weight: 500;
-  line-height: 1.65;
+  max-width: 34ch;
+  margin-bottom: 24px;
+  color: rgba(255, 255, 255, 0.96);
+  font-size: clamp(1.02rem, 1.8vw, 1.22rem);
+  font-weight: 400;
+  line-height: 1.6;
 }
 
 .hero-actions {
   flex-wrap: wrap;
-  gap: 12px;
-  margin-bottom: 26px;
+  gap: 10px 14px;
+  margin-bottom: 18px;
+}
+
+.hero .button.secondary {
+  min-height: 48px;
+  padding-inline: 4px;
+  border: none;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.92);
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-color: rgba(243, 193, 93, 0.55);
+  text-underline-offset: 4px;
+  box-shadow: none;
+}
+
+.hero .button.secondary:hover {
+  color: #ffffff;
+  transform: none;
+}
+
+.hero .benefit-strip {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0;
+  width: min(540px, 100%);
+  margin: 0;
+  padding: 0;
+}
+
+.hero .benefit-strip span {
+  min-height: auto;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  background: none;
+  color: rgba(255, 255, 255, 0.88);
+  font-size: 0.84rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-transform: none;
+}
+
+.hero .benefit-strip span:not(:last-child)::after {
+  margin: 0 10px;
+  color: rgba(243, 193, 93, 0.75);
+  content: "·";
 }
 
 .button {
@@ -1030,20 +1071,26 @@ p {
     background:
       linear-gradient(
         180deg,
-        rgba(6, 25, 68, 0.96) 0%,
-        rgba(6, 25, 68, 0.82) 30%,
-        rgba(6, 25, 68, 0.34) 52%,
-        transparent 68%
+        rgba(6, 25, 68, 0.92) 0%,
+        rgba(6, 25, 68, 0.72) 34%,
+        rgba(6, 25, 68, 0.22) 56%,
+        transparent 72%
       ),
-      linear-gradient(0deg, rgba(6, 25, 68, 0.45) 0%, transparent 12%);
+      linear-gradient(0deg, rgba(6, 25, 68, 0.35) 0%, transparent 12%);
   }
 
   .hero-content {
-    background: linear-gradient(
-      180deg,
-      rgba(6, 25, 68, 0.88) 0%,
-      rgba(6, 25, 68, 0.72) 100%
-    );
+    padding-left: 16px;
+  }
+
+  .hero .benefit-strip {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+
+  .hero .benefit-strip span:not(:last-child)::after {
+    content: none;
   }
 
   h1 {
