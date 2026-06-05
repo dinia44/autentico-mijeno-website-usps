@@ -170,11 +170,11 @@ const translations = {
     team: {
       title: "Su equipo local en Mijas Pueblo",
       copy:
-        "Ofrecemos un servicio cercano, profesional y de confianza para propietarios que buscan que su vivienda esté bien atendida.",
+        "Somos James y Andrea. Vivimos en Mijas Pueblo y gestionamos cada vivienda con trato cercano, profesional y de confianza.",
       pointOne: "Presencia local en Mijas Pueblo, Málaga.",
       pointTwo: "Comunicación directa con propietarios y huéspedes.",
       pointThree: "Valoración gratuita y sin compromiso.",
-      caption: "Servicio cercano para viviendas con encanto local.",
+      caption: "James y Andrea — su equipo local en Mijas Pueblo.",
     },
     contact: {
       eyebrow: "Contacto",
@@ -366,11 +366,11 @@ const translations = {
     team: {
       title: "Your local team in Mijas Pueblo",
       copy:
-        "We offer a close, professional and trusted service for owners who want their property looked after properly.",
+        "We're James and Andrea. We live in Mijas Pueblo and manage every property with a close, professional and trusted approach.",
       pointOne: "Local presence in Mijas Pueblo, Málaga.",
       pointTwo: "Direct communication with owners and guests.",
       pointThree: "Free valuation with no obligation.",
-      caption: "Hands-on service for homes with local character.",
+      caption: "James and Andrea — your local team in Mijas Pueblo.",
     },
     contact: {
       eyebrow: "Contact",
