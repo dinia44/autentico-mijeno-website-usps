@@ -233,22 +233,36 @@ textarea:focus-visible {
   align-items: center;
   padding: clamp(44px, 7vw, 88px) clamp(18px, 4vw, 56px);
   overflow: hidden;
-  background:
-    radial-gradient(circle at 86% 18%, rgba(73, 164, 216, 0.38), transparent 26%),
-    radial-gradient(circle at 58% 82%, rgba(230, 93, 63, 0.26), transparent 22%),
-    linear-gradient(90deg, #061944 0%, rgba(6, 25, 68, 0.96) 43%, rgba(6, 25, 68, 0.62) 68%, rgba(6, 25, 68, 0.16) 100%),
-    linear-gradient(180deg, rgba(6, 25, 68, 0.1), rgba(6, 25, 68, 0.54)),
-    var(--property-photo) center right / cover no-repeat;
+  background-color: var(--navy);
   color: #ffffff;
+  isolation: isolate;
+}
+
+.hero::before {
+  position: absolute;
+  inset: 0;
+  content: "";
+  background: var(--property-photo) center right / cover no-repeat;
+  z-index: -2;
 }
 
 .hero::after {
   position: absolute;
-  inset: auto 0 0;
-  height: 34%;
+  inset: 0;
   content: "";
-  background: linear-gradient(180deg, transparent, rgba(6, 25, 68, 0.68));
+  background:
+    linear-gradient(
+      90deg,
+      rgba(6, 25, 68, 0.94) 0%,
+      rgba(6, 25, 68, 0.7) 16%,
+      rgba(6, 25, 68, 0.24) 32%,
+      transparent 48%
+    ),
+    linear-gradient(180deg, rgba(6, 25, 68, 0.38) 0%, transparent 12%),
+    linear-gradient(0deg, rgba(6, 25, 68, 0.48) 0%, transparent 14%),
+    linear-gradient(270deg, rgba(6, 25, 68, 0.2) 0%, transparent 10%);
   pointer-events: none;
+  z-index: -1;
 }
 
 .hero-content {
@@ -925,6 +939,9 @@ p {
 
   .hero {
     min-height: 700px;
+  }
+
+  .hero::before {
     background-position: center right;
   }
 
@@ -985,9 +1002,22 @@ p {
   .hero {
     min-height: 680px;
     padding-top: 74px;
+  }
+
+  .hero::before {
+    background-position: center top;
+  }
+
+  .hero::after {
     background:
-      linear-gradient(180deg, rgba(6, 25, 68, 0.96) 0%, rgba(6, 25, 68, 0.76) 58%, rgba(6, 25, 68, 0.34) 100%),
-      var(--property-photo) center top / cover no-repeat;
+      linear-gradient(
+        180deg,
+        rgba(6, 25, 68, 0.9) 0%,
+        rgba(6, 25, 68, 0.52) 24%,
+        rgba(6, 25, 68, 0.12) 42%,
+        transparent 58%
+      ),
+      linear-gradient(0deg, rgba(6, 25, 68, 0.45) 0%, transparent 12%);
   }
 
   h1 {
